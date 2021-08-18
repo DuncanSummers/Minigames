@@ -2,26 +2,30 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace PriceIsRight
 {
     public class HiLoGame
-        {
+    {
         public static void HiLo()
         {
             bool playHiLo;
             playHiLo = true;
             int score = 0;
 
-            Random random = new Random();
-            int returnValue = random.Next(1, 999);
-            string input;
+            
 
             while (playHiLo)
             {
-
-
+                Random random = new Random();
+                int returnValue = random.Next(1, 999);
+                string input;
+                Console.WriteLine("Press any key to continue:");
+                Console.ReadKey();
+                Console.Clear();
+                Console.WriteLine();
                 Console.WriteLine(returnValue);
                 Console.WriteLine("Is the next number 'higher' or 'lower'?");
                 input = Console.ReadLine();
@@ -42,6 +46,10 @@ namespace PriceIsRight
                     {
                         Console.WriteLine(newValue);
                         Console.WriteLine("Oh no! That was incorrect!");
+                        Console.WriteLine($"SCORE: {score}");
+                        Thread.Sleep(5000);
+                        Console.Clear();
+                        playHiLo = false;
                     }
                 }
                 else if (input == "lower")
@@ -57,6 +65,10 @@ namespace PriceIsRight
                     {
                         Console.WriteLine(newValue);
                         Console.WriteLine("Oh no! That was incorrect!");
+                        Console.WriteLine($"SCORE: {score}");
+                        Thread.Sleep(5000);
+                        Console.Clear();
+                        playHiLo = false;
                     }
                 }
                 else

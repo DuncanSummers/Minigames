@@ -1,7 +1,7 @@
-C:\Users\djsum\source\repos\PriceIsRight\PriceIsRight\obj\Debug\PriceIsRight.csproj.AssemblyReference.cache
-C:\Users\djsum\source\repos\PriceIsRight\PriceIsRight\obj\Debug\PriceIsRight.csproj.CoreCompileInputs.cache
-C:\Users\djsum\source\repos\PriceIsRight\PriceIsRight\bin\Debug\PriceIsRight.exe.config
 C:\Users\djsum\source\repos\PriceIsRight\PriceIsRight\bin\Debug\PriceIsRight.exe
-C:\Users\djsum\source\repos\PriceIsRight\PriceIsRight\bin\Debug\PriceIsRight.pdb
+C:\Users\djsum\source\repos\PriceIsRight\PriceIsRight\bin\Debug\PriceIsRight.exe.config
+C:\Users\djsum\source\repos\PriceIsRight\PriceIsRight\obj\Debug\PriceIsRight.csproj.CoreCompileInputs.cache
 C:\Users\djsum\source\repos\PriceIsRight\PriceIsRight\obj\Debug\PriceIsRight.exe
 C:\Users\djsum\source\repos\PriceIsRight\PriceIsRight\obj\Debug\PriceIsRight.pdb
+C:\Users\djsum\source\repos\PriceIsRight\PriceIsRight\bin\Debug\PriceIsRight.pdb
+C:\Users\djsum\source\repos\PriceIsRight\PriceIsRight\obj\Debug\PriceIsRight.csproj.AssemblyReference.cache
