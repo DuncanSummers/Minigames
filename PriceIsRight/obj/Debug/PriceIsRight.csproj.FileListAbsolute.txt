@@ -1,0 +1,2 @@
+C:\Users\djsum\source\repos\PriceIsRight\PriceIsRight\obj\Debug\PriceIsRight.csproj.AssemblyReference.cache
+C:\Users\djsum\source\repos\PriceIsRight\PriceIsRight\obj\Debug\PriceIsRight.csproj.CoreCompileInputs.cache
