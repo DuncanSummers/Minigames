@@ -44,7 +44,7 @@ namespace PriceIsRight
                         {
                             Console.WriteLine("Great guess! One microgram of Anti-matter is $62,500,000 of what the hell are you gonna do with.");
                             Console.WriteLine("Congrats you've won all the prizes!!! Unfortunately these prizes have caused us to go bankrupt.\n This'll be our final show...");
-                            Thread.Sleep(7000);
+                            Thread.Sleep(8500);
                             playDangerPrice = false;
                         }
                         else if (input == "1")
@@ -71,7 +71,7 @@ namespace PriceIsRight
                         {
                             Console.WriteLine("Fantastic! Getting your hands on a Rolls-Royce Sweptail shows the world you have $13,000,000 to throw around.");
                             Console.WriteLine("Congrats you've won all the prizes!!! Unfortunately these prizes have caused us to go bankrupt.\n\n This'll be our final show...");
-                            Thread.Sleep(7000);
+                            Thread.Sleep(8500);
                             playDangerPrice = false;
                         }
                         else if (input == "1")
@@ -118,7 +118,7 @@ namespace PriceIsRight
                         {
                             Console.WriteLine("Great guess! One microgram of Anti-matter is $62,500,000 of what the hell are you gonna do with.");
                             Console.WriteLine("Congrats you've won all the prizes!!! Unfortunately these prizes have caused us to go bankrupt.\n This'll be our final show...");
-                            Thread.Sleep(7000);
+                            Thread.Sleep(8500);
                             playDangerPrice = false;
                         }
                         else if (input == "1")
@@ -145,7 +145,7 @@ namespace PriceIsRight
                         {
                             Console.WriteLine("Nice! Owning a public parking space in Manhattan will set you back $1,000,000!");
                             Console.WriteLine("Congrats you've won all the prizes!!! Unfortunately these prizes have caused us to go bankrupt.\n This'll be our final show...");
-                            Thread.Sleep(7000);
+                            Thread.Sleep(8500);
                             playDangerPrice = false;
                         }
                         else if (input == "1")
@@ -192,7 +192,7 @@ namespace PriceIsRight
                         {
                             Console.WriteLine("Fantastic! Getting your hands on a Rolls-Royce Sweptail shows the world you have $13,000,000 to throw around.");
                             Console.WriteLine("Congrats you've won all the prizes!!! Unfortunately these prizes have caused us to go bankrupt.\n This'll be our final show...");
-                            Thread.Sleep(7000);
+                            Thread.Sleep(8500);
                             playDangerPrice = false;
                         }
                         else if (input == "1")
@@ -219,7 +219,7 @@ namespace PriceIsRight
                         {
                             Console.WriteLine("Nice! Owning a public parking space in Manhattan will set you back $1,000,000!");
                             Console.WriteLine("Congrats you've won all the prizes!!! Unfortunately these prizes have caused us to go bankrupt.\n This'll be our final show...");
-                            Thread.Sleep(7000);
+                            Thread.Sleep(8500);
                             playDangerPrice = false;
                         }
                         else if (input == "1")

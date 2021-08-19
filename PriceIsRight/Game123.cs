@@ -9,36 +9,40 @@ namespace PriceIsRight
 {
     public class Game123
     {
+
         public static void EasyGame()
         {
-            int lives = 3;
-            double answer1; // must be declared outside of if statement
-            double answer2; // must be declared outside of if statement
-            double answer3; // must be declared outside of if statement
+            Dictionary<string, double> itemPrice = new Dictionary<string, double>();
 
-            Console.WriteLine("Welcome to Easy as 1 2 3!!");
-            Console.WriteLine("Please input numbers 1, 2, or 3, in the order of least expensive item to most expensive");
+            itemPrice.Add("Coffee Maker", 23.00);
+            itemPrice.Add("Lawn Mower", 150.00);
+            itemPrice.Add("Samsung TV", 230.00);
+            itemPrice.Add("Caviar", 450.00);
+            itemPrice.Add("NFL Football", 27.00);
+            itemPrice.Add("Easton Baseball Bat", 199.00);
+            itemPrice.Add("Frosted Mini-Wheats", 3.00);
+            itemPrice.Add("Diablo 2 Resurrected", 70.00);
+            itemPrice.Add("Star-Trac Treadmill", 500.00);
+            itemPrice.Add("Crest Tooth Paste", 2.15);
+            itemPrice.Add("Expresso Machine", 549.23);
+            itemPrice.Add("JBL Bluetooth Speaker", 31.00);
+            itemPrice.Add("Jefferson's Ocean Bourbon Whiskey", 75.00);
+
+            int lives = 3;
+
+
             bool continueToRun = true;
             while (continueToRun)
             {
-                Dictionary<string, double> itemPrice = new Dictionary<string, double>();
+                Console.WriteLine("Welcome to Easy as 1 2 3!!");
+                Console.WriteLine("Please input numbers 1, 2, or 3, in the order of least expensive item to most expensive");
 
-                itemPrice.Add("Coffe Maker", 23.00);
-                itemPrice.Add("Lawn Mower", 150.00);
-                itemPrice.Add("Samsung TV", 230.00);
-                itemPrice.Add("Caviar", 45.00);
-                itemPrice.Add("NFL Football", 27.00);
-                itemPrice.Add("Easton Baseball Bat", 150.00);
-                itemPrice.Add("Frosted Mini-Wheats", 3.00);
-                itemPrice.Add("Diablo 2 Resurrected", 70.00);
-                itemPrice.Add("Star-Trac Treadmill", 500.00);
-                itemPrice.Add("Crest Tooth Paste", 2.15);
-                itemPrice.Add("Expresso Machine", 549.23);
-                itemPrice.Add("JBL Bluetooth Speaker", 31.00);
-                itemPrice.Add("Jefferson's Ocean Bourbon Whiskey", 75.00);
-
-                Random item = new Random();
+                //Random item = new Random();
                 Random indexer = new Random();
+
+                double answer1; // must be declared outside of if statement
+                double answer2; // must be declared outside of if statement
+                double answer3; // must be declared outside of if statement
 
                 int index1 = indexer.Next(itemPrice.Count);
                 string key1 = itemPrice.Keys.ElementAt(index1);
@@ -68,6 +72,14 @@ namespace PriceIsRight
                 Console.WriteLine("Item 3:" + key3);
                 Console.WriteLine("Which is cheapest '1, 2, or 3' ?");
                 string answerOne = Console.ReadLine();
+
+                while (answerOne != "1" && answerOne != "2" && answerOne != "3")
+                {
+                    Console.WriteLine("Try again!\n\n");
+                    Console.WriteLine("Which is cheapest '1, 2, 3' ?");
+                    answerOne = Console.ReadLine();
+                }
+
                 if (answerOne == "1")
                 {
                     answer1 = value1;
@@ -80,6 +92,8 @@ namespace PriceIsRight
                 {
                     answer1 = value3;
                 }
+
+
 
                 Console.WriteLine("Which is 2nd most expensive '1, 2, or 3' ?");
                 string answerTwo = Console.ReadLine();
@@ -113,108 +127,48 @@ namespace PriceIsRight
                     answer3 = value3;
                 }
 
-                if (value1 < value2 && value1 < value3 && value2 < value3) // 1, 2, 3
+                if (answer1 > answer2 || answer1 > answer3)
                 {
-                    if (answer1 < answer2 && answer1 < answer3 && answer2 < answer3)
+                    Console.WriteLine("Unfortunately that is incorrect. Better luck next time.");
+                    Console.WriteLine("Press any key to continue...");
+                    Console.ReadKey();
+                    Console.Clear();
+                    lives--;
+                    if (lives == 0)
                     {
-                        Console.WriteLine("You got it right!!");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Unfortunately that is incorrect. Better luck next time.");
-                        lives--;
-                        if (lives == 0)
-                        {
-                            Thread.Sleep(4500);
-                            continueToRun = false;
-                        }
+                        continueToRun = false;
                     }
                 }
-                else if (value1 < value2 && value1 < value3 && value3 < value2) // 1, 3, 2
+                else if (answer2 > answer3)
                 {
-                    if (answer1 < answer2 && answer1 < answer3 && answer3 < answer2)
+                    Console.WriteLine("Unfortunately that is incorrect. Better luck next time.");
+                    Console.WriteLine("Press any key to continue...");
+                    Console.ReadKey();
+                    Console.Clear();
+                    lives--;
+                    if (lives == 0)
                     {
-                        Console.WriteLine("You got it right!!");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Unfortunately that is incorrect. Better luck next time.");
-                        lives--;
-                        if (lives == 0)
-                        {
-                            Thread.Sleep(4500);
-                            continueToRun = false;
-                        }
+                        continueToRun = false;
                     }
                 }
-
-                else if (value2 < value1 && value2 < value3 && value1 < value3)  // 2, 1, 3
+                else if (answer3 > answer1 || answer3 > answer2)
                 {
-                    if (answer2 < answer1 && answer2 < answer3 && answer1 < answer3)
+                    Console.WriteLine("Unfortunately that is incorrect. Better luck next time.");
+                    Console.WriteLine("Press any key to continue...");
+                    Console.ReadKey();
+                    Console.Clear();
+                    lives--;
+                    if (lives == 0)
                     {
-                        Console.WriteLine("You got it right!!");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Unfortunately that is incorrect. Better luck next time.");
-                        lives--;
-                        if (lives == 0)
-                        {
-                            Thread.Sleep(4500);
-                            continueToRun = false;
-                        }
+                        continueToRun = false;
                     }
                 }
-                else if (value2 < value1 && value2 < value3 && value3 < value1)  // 2, 3, 1
+                else
                 {
-                    if (answer2 < answer1 && answer2 < answer3 && answer3 < answer1)
-                    {
-                        Console.WriteLine("You got it right!!");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Unfortunately that is incorrect. Better luck next time.");
-                        lives--;
-                        if (lives == 0)
-                        {
-                            Thread.Sleep(4500);
-                            continueToRun = false;
-                        }
-                    }
-                }
-                else if (value3 < value1 && value3 < value2 && value1 < value2)  // 3, 1, 2
-                {
-                    if (answer3 < answer1 && answer3 < answer2 && answer1 < answer2)
-                    {
-                        Console.WriteLine("You got it right!!");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Unfortunately that is incorrect. Better luck next time.");
-                        lives--;
-                        if (lives == 0)
-                        {
-                            Thread.Sleep(4500);
-                            continueToRun = false;
-                        }
-                    }
-                }
-                else if (value3 < value1 && value3 < value2 && value2 < value1)  // 3, 2, 1
-                {
-                    if (answer3 < answer1 && answer3 < answer2 && answer2 < answer1)
-                    {
-                        Console.WriteLine("You got it right!!");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Unfortunately that is incorrect. Better luck next time.");
-                        lives--;
-                        if (lives == 0)
-                        {
-                            Thread.Sleep(4500);
-                            continueToRun = false;
-                        }
-                    }
+                    Console.WriteLine($"You got it right!! {answer1}, {answer2}, {answer3} ");
+                    Console.WriteLine("Press any key to continue...");
+                    Console.ReadKey();
+                    Console.Clear();
                 }
             }
         }
