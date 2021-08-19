@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace PriceIsRight
@@ -15,7 +16,7 @@ namespace PriceIsRight
             double answer2; // must be declared outside of if statement
             double answer3; // must be declared outside of if statement
 
-            Console.WriteLine("welcome to Easy as 1 2 3!!");
+            Console.WriteLine("Welcome to Easy as 1 2 3!!");
             Console.WriteLine("Please input numbers 1, 2, or 3, in the order of least expensive item to most expensive");
             bool continueToRun = true;
             while (continueToRun)
@@ -51,13 +52,12 @@ namespace PriceIsRight
                 }
 
                 int index3 = indexer.Next(itemPrice.Count);
-                string key3 = itemPrice.Keys.ElementAt(index1);
+                string key3 = itemPrice.Keys.ElementAt(index3);
                 while (index3 == index1 || index3 == index2)
                 {
                     index3 = indexer.Next(itemPrice.Count);
                     key3 = itemPrice.Keys.ElementAt(index3);
                 }
-
 
                 double value1 = itemPrice[key1];
                 double value2 = itemPrice[key2];
@@ -125,6 +125,7 @@ namespace PriceIsRight
                         lives--;
                         if (lives == 0)
                         {
+                            Thread.Sleep(4500);
                             continueToRun = false;
                         }
                     }
@@ -141,6 +142,7 @@ namespace PriceIsRight
                         lives--;
                         if (lives == 0)
                         {
+                            Thread.Sleep(4500);
                             continueToRun = false;
                         }
                     }
@@ -158,6 +160,7 @@ namespace PriceIsRight
                         lives--;
                         if (lives == 0)
                         {
+                            Thread.Sleep(4500);
                             continueToRun = false;
                         }
                     }
@@ -174,6 +177,7 @@ namespace PriceIsRight
                         lives--;
                         if (lives == 0)
                         {
+                            Thread.Sleep(4500);
                             continueToRun = false;
                         }
                     }
@@ -190,6 +194,7 @@ namespace PriceIsRight
                         lives--;
                         if (lives == 0)
                         {
+                            Thread.Sleep(4500);
                             continueToRun = false;
                         }
                     }
@@ -206,13 +211,12 @@ namespace PriceIsRight
                         lives--;
                         if (lives == 0)
                         {
+                            Thread.Sleep(4500);
                             continueToRun = false;
                         }
                     }
                 }
-
             }
-
         }
     }
 }

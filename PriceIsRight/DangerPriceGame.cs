@@ -30,12 +30,12 @@ namespace PriceIsRight
                 string input;
                 input = Console.ReadLine();
 
-                if (input == "2") // pick 2 fist 
+                if (input == "2") 
                 {
                     Console.WriteLine("Nice! Owning a public parking space in Manhattan will set you back $1,000,000!");
                     Console.WriteLine("Which item is NOT worth the Danger Price? (1, 3, or 4?)");
                     input = Console.ReadLine();
-                    if (input == "3") // 2 then 3 
+                    if (input == "3") 
                     {
                         Console.WriteLine("Fantastic! Getting your hands on a Rolls-Royce Sweptail shows the world you have $13,000,000 to throw around.");
                         Console.WriteLine("Which item is NOT worth the Danger Price? (1 or 4?)");
@@ -62,7 +62,7 @@ namespace PriceIsRight
                             playDangerPrice = false;
                         }
                     }
-                    else if (input == "4") // 2 then 4
+                    else if (input == "4")
                     {
                         Console.WriteLine("Great guess! One microgram of Anti-matter is $62,500,000 of what the hell are you gonna do with.");
                         Console.WriteLine("Which item is NOT worth the Danger Price? (1 or 3?)");
@@ -104,12 +104,12 @@ namespace PriceIsRight
                         playDangerPrice = false;
                     }
                 }
-                else if (input == "3") // Choosing 3 First
+                else if (input == "3")
                 {
                     Console.WriteLine("Fantastic! Getting your hands on a Rolls-Royce Sweptail shows the world you have $13,000,000 to throw around.");
                     Console.WriteLine("Which item is NOT worth the Danger Price? (1, 2, or 4?)");
                     input = Console.ReadLine();
-                    if (input == "2") // 3 then 2
+                    if (input == "2")
                     {
                         Console.WriteLine("Nice! Owning a public parking space in Manhattan will set you back $1,000,000!");
                         Console.WriteLine("Which item is NOT worth the Danger Price? (1 or 4?)");
@@ -136,7 +136,7 @@ namespace PriceIsRight
                             playDangerPrice = false;
                         }
                     }
-                    else if (input == "4") // 3 then 4
+                    else if (input == "4")
                     {
                         Console.WriteLine("Great guess! One microgram of Anti-matter is $62,500,000 of what the hell are you gonna do with.");
                         Console.WriteLine("Which item is NOT worth the Danger Price? (1 or 2?)");
@@ -178,12 +178,12 @@ namespace PriceIsRight
                         playDangerPrice = false;
                     }
                 }
-                else if (input == "4") // Choosing 4 First
+                else if (input == "4")
                 {
                     Console.WriteLine("Great guess! One microgram of Anti-matter is $62,500,000 of what the hell are you gonna do with.");
                     Console.WriteLine("Which item is NOT worth the Danger Price? (1, 2, or 3?)");
                     input = Console.ReadLine();
-                    if (input == "2") // 4 then 2
+                    if (input == "2")
                     {
                         Console.WriteLine("Nice! Owning a public parking space in Manhattan will set you back $1,000,000!");
                         Console.WriteLine("Which item is NOT worth the Danger Price? (1 or 3?)");
@@ -210,7 +210,7 @@ namespace PriceIsRight
                             playDangerPrice = false;
                         }
                     }
-                    else if (input == "3") // 4 then 3
+                    else if (input == "3")
                     {
                         Console.WriteLine("Fantastic! Getting your hands on a Rolls-Royce Sweptail shows the world you have $13,000,000 to throw around.");
                         Console.WriteLine("Which item is NOT worth the Danger Price? (1 or 2?)");
@@ -252,7 +252,7 @@ namespace PriceIsRight
                         playDangerPrice = false;
                     }
                 }
-                else if (input == "1") // Choosing 1 first
+                else if (input == "1")
                 {
                     Console.Clear();
                     Console.WriteLine("DANGER PRICE! Sorry, the Black Diamond IPhone does, in fact, cost a whopping $15,300,000!");
