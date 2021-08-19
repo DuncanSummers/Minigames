@@ -16,7 +16,6 @@ namespace PriceIsRight
             int score = 0;
 
             
-
             while (playHiLo)
             {
                 Random random = new Random();
@@ -47,7 +46,7 @@ namespace PriceIsRight
                         Console.WriteLine(newValue);
                         Console.WriteLine("Oh no! That was incorrect!");
                         Console.WriteLine($"SCORE: {score}");
-                        Thread.Sleep(5000);
+                        Thread.Sleep(3500);
                         Console.Clear();
                         playHiLo = false;
                     }
@@ -66,7 +65,7 @@ namespace PriceIsRight
                         Console.WriteLine(newValue);
                         Console.WriteLine("Oh no! That was incorrect!");
                         Console.WriteLine($"SCORE: {score}");
-                        Thread.Sleep(5000);
+                        Thread.Sleep(3500);
                         Console.Clear();
                         playHiLo = false;
                     }
