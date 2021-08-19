@@ -40,7 +40,7 @@ namespace PriceIsRight
                 Console.WriteLine("|.  _   |__|___  |__|__|____|");
                 Console.WriteLine("|:  |   |  |_____|");
                 Console.WriteLine("|::.|:. |");
-                Console.WriteLine("`--- ---'");
+                Console.WriteLine("`--- ---'    By Duncan Summers and Roy Bentz");
                 Console.WriteLine("\n\n\nWhich 'The Price Is Right' themed mini-game would you like to play?:\n" +
                     "1. Hi-Lo\n" +
                     "2. Easy 1-2-3\n" +
@@ -56,7 +56,8 @@ namespace PriceIsRight
                         HiLoGame.HiLo();
                         break;
                     case "2":
-                        Console.WriteLine("coming soon");
+                        Console.Clear();
+                        Game123.EasyGame();
                         break;
                     case "3":
                         Console.Clear();
