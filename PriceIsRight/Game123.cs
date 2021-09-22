@@ -34,8 +34,8 @@ namespace PriceIsRight
             bool continueToRun = true;
             while (continueToRun)
             {
-                Console.WriteLine("Welcome to Easy as 1 2 3!!");
-                Console.WriteLine("Please input numbers 1, 2, or 3, in the order of least expensive item to most expensive");
+                Console.WriteLine("\tWelcome to Easy as 1 2 3!!");
+                Console.WriteLine("\n\tPlease input numbers 1, 2, or 3, in the order of least expensive item to most expensive\n");
 
                 //Random item = new Random();
                 Random indexer = new Random();
@@ -67,16 +67,18 @@ namespace PriceIsRight
                 double value2 = itemPrice[key2];
                 double value3 = itemPrice[key3];
 
-                Console.WriteLine("Item 1:" + key1);
-                Console.WriteLine("Item 2:" + key2);
-                Console.WriteLine("Item 3:" + key3);
-                Console.WriteLine("Which is cheapest '1, 2, or 3' ?");
+                Console.WriteLine("\tItem 1: " + key1);
+                Console.WriteLine("\tItem 2: " + key2);
+                Console.WriteLine("\tItem 3: " + key3);
+                Console.WriteLine("\n\tWhich is cheapest '1, 2, or 3' ?");
+                Console.Write("\t");
                 string answerOne = Console.ReadLine();
 
                 while (answerOne != "1" && answerOne != "2" && answerOne != "3")
                 {
-                    Console.WriteLine("Try again!\n\n");
-                    Console.WriteLine("Which is cheapest '1, 2, 3' ?");
+                    Console.WriteLine("\tTry again!\n\n");
+                    Console.WriteLine("\n\tWhich is cheapest '1, 2, 3' ?");
+                    Console.Write("\t");
                     answerOne = Console.ReadLine();
                 }
 
@@ -95,7 +97,8 @@ namespace PriceIsRight
 
 
 
-                Console.WriteLine("Which is 2nd most expensive '1, 2, or 3' ?");
+                Console.WriteLine("\n\tWhich is 2nd most expensive '1, 2, or 3' ?");
+                Console.Write("\t");
                 string answerTwo = Console.ReadLine();
 
                 if (answerTwo == "1")
@@ -111,7 +114,8 @@ namespace PriceIsRight
                     answer2 = value3;
                 }
 
-                Console.WriteLine("Which is most expensive '1, 2, or 3' ?");
+                Console.WriteLine("\n\tWhich is most expensive '1, 2, or 3' ?");
+                Console.Write("\n\t");
                 string answerThree = Console.ReadLine();
 
                 if (answerThree == "1")
@@ -129,8 +133,9 @@ namespace PriceIsRight
 
                 if (answer1 > answer2 || answer1 > answer3)
                 {
-                    Console.WriteLine("Unfortunately that is incorrect. Better luck next time.");
-                    Console.WriteLine("Press any key to continue...");
+                    Console.WriteLine("\tUnfortunately that is incorrect. Better luck next time.");
+                    Console.WriteLine("\tPress any key to continue...");
+                    Console.Write("\n");
                     Console.ReadKey();
                     Console.Clear();
                     lives--;
@@ -141,8 +146,9 @@ namespace PriceIsRight
                 }
                 else if (answer2 > answer3)
                 {
-                    Console.WriteLine("Unfortunately that is incorrect. Better luck next time.");
-                    Console.WriteLine("Press any key to continue...");
+                    Console.WriteLine("\tUnfortunately that is incorrect. Better luck next time.");
+                    Console.WriteLine("\tPress any key to continue...");
+                    Console.Write("\n");
                     Console.ReadKey();
                     Console.Clear();
                     lives--;
@@ -153,8 +159,9 @@ namespace PriceIsRight
                 }
                 else if (answer3 > answer1 || answer3 > answer2)
                 {
-                    Console.WriteLine("Unfortunately that is incorrect. Better luck next time.");
-                    Console.WriteLine("Press any key to continue...");
+                    Console.WriteLine("\tUnfortunately that is incorrect. Better luck next time.");
+                    Console.WriteLine("\tPress any key to continue...");
+                    Console.Write("\n");
                     Console.ReadKey();
                     Console.Clear();
                     lives--;
@@ -165,8 +172,8 @@ namespace PriceIsRight
                 }
                 else
                 {
-                    Console.WriteLine($"You got it right!! {answer1}, {answer2}, {answer3} ");
-                    Console.WriteLine("Press any key to continue...");
+                    Console.WriteLine($"\tYou got it right!! {answer1}, {answer2}, {answer3} ");
+                    Console.WriteLine("\tPress any key to continue...");
                     Console.ReadKey();
                     Console.Clear();
                 }

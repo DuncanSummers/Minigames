@@ -19,34 +19,35 @@ namespace PriceIsRight
             bool continueToRun = true;
             while (continueToRun)
             {
-                Console.WriteLine(" __   __");                       
-                Console.WriteLine("|  |_|  |--.-----.");
-                Console.WriteLine("|   _|     |  -__|");
-                Console.WriteLine("|____|__|__|_____|");
-                Console.WriteLine(" _______      __ ");
-                Console.WriteLine("|   _   .----|__.----.-----.");
-                Console.WriteLine("|.  1   |   _|  |  __|  -__|");
-                Console.WriteLine("|.  ____|__| |__|____|_____|");
-                Console.WriteLine("|:  |");
-                Console.WriteLine("|::.|");
-                Console.WriteLine("`---'");                          
-                Console.WriteLine(" __");
-                Console.WriteLine("|__.-----.");
-                Console.WriteLine("|  |__ --|");
-                Console.WriteLine("|__|_____|");
-                Console.WriteLine(" _______ __       __    __");
-                Console.WriteLine("|   _   |__.-----|  |--|  |_");
-                Console.WriteLine("|.  l   |  |  _  |     |   _|");
-                Console.WriteLine("|.  _   |__|___  |__|__|____|");
-                Console.WriteLine("|:  |   |  |_____|");
-                Console.WriteLine("|::.|:. |");
-                Console.WriteLine("`--- ---'    By Duncan Summers and Roy Bentz");
-                Console.WriteLine("\n\n\nWhich 'The Price Is Right' themed mini-game would you like to play?:\n" +
-                    "1. Hi-Lo\n" +
-                    "2. Easy 1-2-3\n" +
-                    "3. Danger Price\n" +
-                    "4. Exit");
+                Console.WriteLine("\t __   __");                       
+                Console.WriteLine("\t|  |_|  |--.-----.");
+                Console.WriteLine("\t|   _|     |  -__|");
+                Console.WriteLine("\t|____|__|__|_____|");
+                Console.WriteLine("\t _______      __ ");
+                Console.WriteLine("\t|   _   .----|__.----.-----.");
+                Console.WriteLine("\t|.  1   |   _|  |  __|  -__|");
+                Console.WriteLine("\t|.  ____|__| |__|____|_____|");
+                Console.WriteLine("\t|:  |");
+                Console.WriteLine("\t|::.|");
+                Console.WriteLine("\t`---'");                          
+                Console.WriteLine("\t __");
+                Console.WriteLine("\t|__.-----.");
+                Console.WriteLine("\t|  |__ --|");
+                Console.WriteLine("\t|__|_____|");
+                Console.WriteLine("\t _______ __       __    __");
+                Console.WriteLine("\t|   _   |__.-----|  |--|  |_");
+                Console.WriteLine("\t|.  l   |  |  _  |     |   _|");
+                Console.WriteLine("\t|.  _   |__|___  |__|__|____|");
+                Console.WriteLine("\t|:  |   |  |_____|");
+                Console.WriteLine("\t|::.|:. |");
+                Console.WriteLine("\t`--- ---'    By Duncan Summers and Roy Bentz");
+                Console.WriteLine("\n\n\n \t Which 'The Price Is Right' themed mini-game would you like to play?:\n" +
+                    "\t 1. Hi-Lo\n" +
+                    "\t 2. Easy 1-2-3\n" +
+                    "\t 3. Danger Price\n" +
+                    "\t 4. Exit");
 
+                Console.Write("\t");
                 string userInput = Console.ReadLine();
                 
                 switch (userInput)

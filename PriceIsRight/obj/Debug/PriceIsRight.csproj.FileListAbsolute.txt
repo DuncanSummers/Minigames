@@ -5,3 +5,10 @@ C:\Users\djsum\source\repos\PriceIsRight\PriceIsRight\obj\Debug\PriceIsRight.exe
 C:\Users\djsum\source\repos\PriceIsRight\PriceIsRight\obj\Debug\PriceIsRight.pdb
 C:\Users\djsum\source\repos\PriceIsRight\PriceIsRight\bin\Debug\PriceIsRight.pdb
 C:\Users\djsum\source\repos\PriceIsRight\PriceIsRight\obj\Debug\PriceIsRight.csproj.AssemblyReference.cache
+D:\ElevenFiftyProjects\TeamProjects\Mini Games\PriceIsRight\bin\Debug\PriceIsRight.exe.config
+D:\ElevenFiftyProjects\TeamProjects\Mini Games\PriceIsRight\bin\Debug\PriceIsRight.exe
+D:\ElevenFiftyProjects\TeamProjects\Mini Games\PriceIsRight\bin\Debug\PriceIsRight.pdb
+D:\ElevenFiftyProjects\TeamProjects\Mini Games\PriceIsRight\obj\Debug\PriceIsRight.csproj.AssemblyReference.cache
+D:\ElevenFiftyProjects\TeamProjects\Mini Games\PriceIsRight\obj\Debug\PriceIsRight.csproj.CoreCompileInputs.cache
+D:\ElevenFiftyProjects\TeamProjects\Mini Games\PriceIsRight\obj\Debug\PriceIsRight.exe
+D:\ElevenFiftyProjects\TeamProjects\Mini Games\PriceIsRight\obj\Debug\PriceIsRight.pdb

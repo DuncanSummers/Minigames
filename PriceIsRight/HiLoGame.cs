@@ -21,12 +21,13 @@ namespace PriceIsRight
                 Random random = new Random();
                 int returnValue = random.Next(1, 999);
                 string input;
-                Console.WriteLine("Press any key to continue:");
+                Console.WriteLine("\n\tPress any key to continue:");
                 Console.ReadKey();
                 Console.Clear();
                 Console.WriteLine();
-                Console.WriteLine(returnValue);
-                Console.WriteLine("Is the next number 'higher' or 'lower'?");
+                Console.Write($"\t{returnValue} :");
+                Console.Write("\tIs the next number 'higher' or 'lower'?");
+                Console.Write("\n\t");
                 input = Console.ReadLine();
                 Random newRandom = new Random();
                 int newValue = newRandom.Next(1, 999);
@@ -36,17 +37,17 @@ namespace PriceIsRight
                 {
                     if (newValue > returnValue)
                     {
-                        Console.WriteLine(newValue);
-                        Console.WriteLine("You guessed right! It was higher!");
+                        Console.Write($"\t{newValue}: ");
+                        Console.Write("You guessed right! It was higher!");
                         newValue = returnValue;
                         score++;
                     }
                     else if (newValue <= returnValue)
                     {
-                        Console.WriteLine(newValue);
-                        Console.WriteLine("Oh no! That was incorrect!");
-                        Console.WriteLine($"SCORE: {score}");
-                        Thread.Sleep(3500);
+                        Console.Write($"\t{newValue}: ");
+                        Console.Write("Oh no! That was incorrect!");
+                        Console.WriteLine($"\tSCORE: {score}");
+                        Thread.Sleep(7000);
                         Console.Clear();
                         playHiLo = false;
                     }
@@ -55,24 +56,24 @@ namespace PriceIsRight
                 {
                     if (newValue < returnValue)
                     {
-                        Console.WriteLine(newValue);
-                        Console.WriteLine("You guessed right! It was lower!");
+                        Console.Write($"\t{newValue}: ");
+                        Console.Write("You guessed right! It was lower!");
                         newValue = returnValue;
                         score++;
                     }
                     else if (newValue >= returnValue)
                     {
-                        Console.WriteLine(newValue);
-                        Console.WriteLine("Oh no! That was incorrect!");
-                        Console.WriteLine($"SCORE: {score}");
-                        Thread.Sleep(3500);
+                        Console.Write($"\t{newValue}: ");
+                        Console.Write("Oh no! That was incorrect!");
+                        Console.WriteLine($"\tSCORE: {score}");
+                        Thread.Sleep(7000);
                         Console.Clear();
                         playHiLo = false;
                     }
                 }
                 else
                 {
-                    Console.WriteLine("Please input either 'higher' or 'lower'");
+                    Console.WriteLine("\tPlease input either 'higher' or 'lower'");
                 }
             }
         }
